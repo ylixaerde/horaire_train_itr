@@ -1,0 +1,3 @@
+UPDATE TRAIN
+SET Code='RT7834'
+WHERE train_id='1';
