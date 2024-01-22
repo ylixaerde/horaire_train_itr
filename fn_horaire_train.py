@@ -182,8 +182,8 @@ def fn_update_db(train_code, train_id, db_name):
             print(f"Connected to the database {db_name}")
             cursor = sqliteConnection.cursor()
             try:
-                print(f"Commande SQL exécutée : INSERT INTO TRAIN (code) VALUES ('{train_code}') WHERE TRAIN (train_id) == ('{train_id}');")
-                cursor.execute(f"INSERT INTO TRAIN (code) VALUES ('{train_code}') WHERE TRAIN (train_id) == ('{train_id}');")
+                print(f"UPDATE TRAIN SET Code='{train_code}' WHERE train_id='{train_id}';")
+                cursor.execute(f"UPDATE TRAIN SET Code='{train_code}' WHERE train_id='{train_id}';")
                 print("SQLite command executed successfully")
             except sqlite3.Error as error:
                 print(f"Error while executing SQLite script: {error}")
