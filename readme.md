@@ -44,8 +44,8 @@ Déployer une base de données permettant de supporter l'affichage d'horaire de 
 * **fn_init_update_train_code_menu** Renvoie une liste contenant les choix du menu
 (function) def fn_init_update_train_code_menu() -> list[str]
 
-* **fn_update_train_code_menu** Affiche le menu et fait appel à fn_input_train_code, fn_get_db_name, fn_update_train_code
+* **fn_update_train_code_menu** Affiche le menu et fait appel à fn_get_db_name, fn_read_db, fn_input_train_code, fn_update_train_code
 (function) def fn_update_train_code_menu(list_menu: Any) -> bool
 
-* **fn_update_db** Fais appel à fn_read_db, fn_init_update_train_code_menu et fn_update_train_code_menu
+* **fn_update_db** Fais appel à fn_init_update_train_code_menu et fn_update_train_code_menu
 (function) def fn_update_db() -> bool
