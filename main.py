@@ -54,7 +54,9 @@ def fn_menu(list_menu):
                 boucle = fnht.fn_update_db()
             return True
         case 5:
-            
+            boucle = True
+            while boucle:
+                boucle = fnht.fn_delete_db()
             return True
         case 6:
             print(f'Fermeture de l\'application')
