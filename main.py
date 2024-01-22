@@ -45,10 +45,13 @@ def fn_menu(list_menu):
                 boucle = fnht.fn_create_db()
             return True
         case 3:
-            
+            db_name = fnht.fn_get_db_name()
+            fnht.fn_read_db(db_name)
             return True
         case 4:
-            
+            boucle = True
+            while boucle:
+                boucle = fnht.fn_update_db()
             return True
         case 5:
             
